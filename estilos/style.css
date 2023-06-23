@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-family: system-ui;
+    line-height: 1.5;
+    background-color: hsl(0, 0%, 100%);
+}
+
+section {
+    padding-block: 3rem;
+    font-size: clamp(.5rem, 2.5vw, 2rem);
+}
+
+section:nth-child(even) {
+    background-color: #fff;
+    color: black;
+}
+
+section:nth-child(odd) {
+    background-color: black;
+    color: #fff;
+}
+
+.wrapper {
+    width: 50dvw;
+    margin-inline: auto;
+}
+
+.wrapper > p {
+    text-align: justify;
+}
+
+.logo {
+    position: sticky;
+    top: 0.5rem;
+    color: #fff;
+    width: 7rem;
+    margin: 1.5rem;
+    font-size: clamp(1.175rem, 4vw, 5rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    mix-blend-mode: difference; /* Para mudar de cor quando a cor de fundo for igual. */
+}
