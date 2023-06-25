@@ -91,7 +91,7 @@ h2 {
 
 .container__cup {
     width: 100%;
-    height: calc(100vh - 40%);
+    height: calc(100vh - 55px);
     margin-inline: auto;
     display: flex;
     justify-content: center;
@@ -156,7 +156,7 @@ h2 {
 
 .plate {
     position: absolute;
-    bottom: 60px;
+    bottom: 70px;
     left: 50%;
     transform: translateX(-50%);
     width: 500px;
@@ -241,6 +241,6 @@ footer {
     font-weight: 600;
     font-size: clamp(.75rem, 2vw, 1.5rem);
     text-align: center;
-    padding-block: 20px;
+    padding-bottom: 20px;
 
 }
