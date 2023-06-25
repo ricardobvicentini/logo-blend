@@ -19,7 +19,7 @@ body {
 }
 
 section {
-    padding-block: 6rem;
+    padding-block: 7rem;
     font-size: clamp(.5rem, 2.5vw, 2rem);
 }
 
@@ -47,7 +47,7 @@ section:nth-child(odd) {
 }
 
 h2 {
-    scroll-margin-top: 4rem;
+    scroll-margin-top: 6rem;
 }
 
 .logo {
@@ -63,15 +63,14 @@ h2 {
 }
 
 .nav {
-    display: inline-block;
-    position: absolute;
-    top: 4%;
-    right: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav__items {
     display: flex;
-    justify-content: center;
+    justify-content: space;
     align-items: center;
 }
 
@@ -92,6 +91,7 @@ h2 {
 
 .container__cup {
     width: 100%;
+    height: calc(100vh - 40%);
     margin-inline: auto;
     display: flex;
     justify-content: center;
@@ -120,7 +120,7 @@ h2 {
 }
 
 .circle {
-    border: 1px solid  rgb(196, 194, 194);
+    border: 1px solid rgb(197, 195, 195);
     position: absolute;
     top: 5px;
     left: 10px;
@@ -156,7 +156,7 @@ h2 {
 
 .plate {
     position: absolute;
-    bottom: 40px;
+    bottom: 60px;
     left: 50%;
     transform: translateX(-50%);
     width: 500px;
@@ -233,4 +233,14 @@ h2 {
     100% {
         transform: translateY(-300px) scaleX(10);
     }
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    font-weight: 600;
+    font-size: clamp(.75rem, 2vw, 1.5rem);
+    text-align: center;
+    padding-block: 20px;
+
 }
