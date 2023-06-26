@@ -97,7 +97,7 @@ h2 {
     justify-content: center;
     align-items: center;
     position: relative;
-    padding: 100px 0 10px;
+    padding: 70px 0 10px;
 }
 
 .cup {
@@ -243,6 +243,16 @@ footer {
     font-weight: 600;
     font-size: clamp(.75rem, 2vw, 1.5rem);
     text-align: center;
-    padding-bottom: 20px;
+    padding: 10px 0;
 
+}
+
+@media screen and (max-width: 400px) {
+    .container__cup {
+        display: none;
+    }
+
+    .coffee__item {
+        display: none;
+    }
 }
