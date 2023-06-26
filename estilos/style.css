@@ -19,7 +19,7 @@ body {
 }
 
 section {
-    padding-block: 7rem;
+    padding-block: 10rem;
     font-size: clamp(.5rem, 2.5vw, 2rem);
 }
 
@@ -47,7 +47,7 @@ section:nth-child(odd) {
 }
 
 h2 {
-    scroll-margin-top: 6rem;
+    scroll-margin-top: 10rem;
 }
 
 .logo {
@@ -97,7 +97,7 @@ h2 {
     justify-content: center;
     align-items: center;
     position: relative;
-    padding-top: 20px;
+    padding: 100px 0 10px;
 }
 
 .cup {
@@ -157,7 +157,7 @@ h2 {
 
 .plate {
     position: absolute;
-    bottom: 70px;
+    bottom: 100px;
     left: 50%;
     transform: translateX(-50%);
     width: 500px;
@@ -165,6 +165,7 @@ h2 {
     background-image: linear-gradient(to right, #f9f9f9, #e7e7e7);
     border-radius: 50%;
 }
+
 
 .plate::before {
     content: '';
