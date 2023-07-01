@@ -20,11 +20,12 @@ body {
 
 section {
     padding-block: 10rem;
+    width: 100vw;;
     font-size: clamp(.5rem, 2.5vw, 2rem);
 }
 
 .first-section {
-    margin-top: 1.5rem;
+    margin-top: clamp(1.4rem, 2.6vw, 1.5rem);
 }
 
 section:nth-child(even) {
@@ -52,7 +53,8 @@ h2 {
 
 .logo {
     position: sticky;
-    top: 2%;
+    top: 1.5%;
+    left: 4%;
     color: #fff;
     width: 7rem;
     margin: 1.5rem;
@@ -63,30 +65,37 @@ h2 {
 }
 
 .nav {
+    position: absolute;
+    width: clamp(200px, 45vw, 600px);
+    top: 0;
+    right: 2%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    margin-top: clamp(18px, 2.8%, 50px);
 }
 
-.nav__items {
+/* .nav__items {
+    width: clamp(200px, 45vw, 600px);
     display: flex;
-    justify-content: space;
+    justify-content: space-between;
     align-items: center;
-}
+} */
 
-.nav__items > a {
+.nav > a {
     text-decoration: none;
     color: black;
     font-weight: 600;
     font-size: clamp(.75rem, 2vw, 1.5rem);
-    margin-left: clamp(1rem, 2vw, 1.25rem);
+    /* margin-left: clamp(1rem, 2vw, 1.25rem); */
+
     transition: all .2s;
 }
 
 .nav__items > a:hover,
 .nav__items > a:focus {
     transform: translate(-3px, -3px) scale(1.2);
-    color: #333;
+    color: #7e7d7d;
 }
 
 .container__cup {
@@ -157,7 +166,7 @@ h2 {
 
 .plate {
     position: absolute;
-    bottom: 100px;
+    bottom: 190px;
     left: 50%;
     transform: translateX(-50%);
     width: 500px;
@@ -243,8 +252,6 @@ footer {
     font-weight: 600;
     font-size: clamp(.75rem, 2vw, 1.5rem);
     text-align: center;
-    padding: 10px 0;
-
 }
 
 @media screen and (max-width: 450px) and (orientation: landscape) {
