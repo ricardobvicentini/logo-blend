@@ -20,7 +20,7 @@ body {
 
 section {
     padding-block: 10rem;
-    width: 100vw;;
+    width: 100vw;
     font-size: clamp(.5rem, 2.5vw, 2rem);
 }
 
@@ -75,20 +75,12 @@ h2 {
     margin-top: clamp(18px, 2.8%, 50px);
 }
 
-/* .nav__items {
-    width: clamp(200px, 45vw, 600px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
 
 .nav > a {
     text-decoration: none;
     color: black;
     font-weight: 600;
     font-size: clamp(.75rem, 2vw, 1.5rem);
-    /* margin-left: clamp(1rem, 2vw, 1.25rem); */
-
     transition: all .2s;
 }
 
